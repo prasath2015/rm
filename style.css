@@ -1,0 +1,94 @@
+:root {
+  color-scheme: dark;
+  font-family: Inter, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+.container {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 2rem 1rem 4rem;
+}
+
+.subtitle {
+  color: #94a3b8;
+}
+
+.card {
+  background: #1e293b;
+  border-radius: 14px;
+  padding: 1rem;
+  margin-top: 1rem;
+  border: 1px solid #334155;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.row {
+  display: flex;
+  gap: 0.6rem;
+}
+
+input {
+  flex: 1;
+  padding: 0.8rem;
+  border-radius: 10px;
+  border: 1px solid #475569;
+  background: #0f172a;
+  color: #f8fafc;
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 0.8rem 1rem;
+  background: #22c55e;
+  color: #04120a;
+  font-weight: 600;
+}
+
+button.secondary {
+  background: #475569;
+  color: #f8fafc;
+}
+
+.controls {
+  margin-top: 0.5rem;
+}
+
+#statusText {
+  display: block;
+  margin-top: 0.6rem;
+  color: #cbd5e1;
+}
+
+#logList {
+  margin: 0;
+  padding-left: 1rem;
+}
+
+#logList li {
+  margin-bottom: 0.5rem;
+}
+
+.status-success {
+  color: #4ade80;
+}
+
+.status-error {
+  color: #f87171;
+}
+
+.status-queued {
+  color: #facc15;
+}
