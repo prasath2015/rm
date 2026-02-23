@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Remote Desktop Command</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+</head>
+<body>
+  <main class="container">
+    <h1>Remote Desktop Command Center</h1>
+    <p class="subtitle">
+      Open this page from your phone and send command text or voice input.
+      Commands are processed on the desktop where this Flask app is running.
+    </p>
+
+    <section class="card">
+      <label for="tokenInput">Token (optional)</label>
+      <input id="tokenInput" type="password" placeholder="Set only if REMOTE_API_TOKEN is configured" />
+      <label for="commandInput">Command</label>
+      <div class="row">
+        <input id="commandInput" type="text" placeholder="e.g. open browser / create file notes.txt / type hello" />
+        <button id="sendBtn">Send</button>
+      </div>
+      <div class="row controls">
+        <button id="micBtn" class="secondary">🎙️ Start Voice</button>
+        <button id="stopMicBtn" class="secondary">⏹️ Stop</button>
+      </div>
+      <small id="statusText">Ready.</small>
+    </section>
+
+    <section class="card">
+      <h2>Command Activity</h2>
+      <ul id="logList"></ul>
+    </section>
+  </main>
+
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
